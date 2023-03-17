@@ -7,43 +7,64 @@ package factory;
 */
 import domain.Book;
 
+import java.util.ArrayList;
 import java.util.List;
 
+
 public class BookFactory implements Factory<Book> {
+    private final List<Book> books;
+    private long nextId;
+
+    public BookFactory() {
+        books = new ArrayList<>();
+        nextId = 1;
+    }
 
     @Override
     public Book create() {
-        // TODO: Implement create method
-        return null;
+        return new Book.Builder("", null, null, "").build();
     }
 
     @Override
     public Book getById(long id) {
-        // TODO: Implement getById method
-        return null;
-    }
-
-    @Override
-    public List<Book> getAll() {
-        // TODO: Implement getAll method
+        for (Book book : books) {
+            if (book.getId() == id) {
+                return book;
+            }
+        }
         return null;
     }
 
     @Override
     public Book update(Book entity) {
-        // TODO: Implement update method
+        for (int i = 0; i < books.size(); i++) {
+            if (books.get(i).getId() == entity.getId()) {
+                books.set(i, entity);
+                return entity;
+            }
+        }
         return null;
     }
 
     @Override
     public boolean delete(Book entity) {
-        // TODO: Implement delete method
-        return false;
+        return books.remove(entity);
+    }
+
+    @Override
+    public List<Book> getAll() {
+        return new ArrayList<>(books);
     }
 
     @Override
     public long count() {
-        // TODO: Implement count method
-        return 0;
+        return books.size();
+    }
+
+
+    public Book create(Book entity) {
+        entity.setId(nextId++);
+        books.add(entity);
+        return entity;
     }
 }

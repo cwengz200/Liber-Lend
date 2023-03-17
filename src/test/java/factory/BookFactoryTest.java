@@ -1,7 +1,12 @@
 package factory;
 
-import static org.junit.jupiter.api.Assertions.*;
+import domain.Book;
 
-class BookFactoryTest {
+
+public class BookFactoryTest {
 
 }
+
+
+
+

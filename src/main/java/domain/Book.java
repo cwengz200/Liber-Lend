@@ -9,9 +9,9 @@ package domain;
 
 import java.util.Objects;
 
-import java.util.Objects;
 
 public class Book {
+    private long id;
     private final String title;
     private final Author author;
     private final Publisher publisher;
@@ -23,6 +23,7 @@ public class Book {
     private final int edition;
 
     private Book(Builder builder) {
+        this.id = builder.id;
         this.title = builder.title;
         this.author = builder.author;
         this.publisher = builder.publisher;
@@ -32,6 +33,14 @@ public class Book {
         this.genre = builder.genre;
         this.language = builder.language;
         this.edition = builder.edition;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     // getters
@@ -75,6 +84,7 @@ public class Book {
     // Builder class
 
     public static class Builder {
+        private long id;
         private final String title;
         private final Author author;
         private final Publisher publisher;
@@ -90,6 +100,11 @@ public class Book {
             this.author = author;
             this.publisher = publisher;
             this.ISBN = ISBN;
+        }
+
+        public Builder id(long id) {
+            this.id = id;
+            return this;
         }
 
         public Builder imageLink(String imageLink) {

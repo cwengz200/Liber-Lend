@@ -6,8 +6,6 @@ package domain;
     Date: 17 March 2021
 */
 
-
-
 import java.util.Date;
 import java.util.Objects;
 

@@ -6,11 +6,13 @@ package factory;
     Date: 17 March 2021
 */
 
+import domain.Book;
+
 import java.util.List;
 
 public interface Factory<T> {
     T create();
-    T getById(long id);
+    Book getById(long id);
     T update(T entity);
     boolean delete(T entity);
     List<T> getAll();

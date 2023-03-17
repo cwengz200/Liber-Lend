@@ -1,5 +1,6 @@
 package factory;
 
+import domain.Book;
 import domain.Magazine;
 
 import java.util.Collections;
@@ -18,7 +19,7 @@ public class MagazineFactory implements Factory<Magazine> {
     }
 
     @Override
-    public Magazine getById(long id) {
+    public Book getById(long id) {
         return null;
     }
 

@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="db14a627-3a96-437e-9cb3-9657ff8515ce" name="Changes" comment="Commit my base for tests" />
+    <list default="true" id="db14a627-3a96-437e-9cb3-9657ff8515ce" name="Changes" comment="Commit my base for tests">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Magazine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Magazine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/BookFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/BookFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/Factory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/Factory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/factory/MagazineFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/MagazineFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/domain/BookTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/domain/BookTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/domain/MagazineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/domain/MagazineTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/factory/BookFactoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/factory/BookFactoryTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -73,7 +83,70 @@
       <recent name="domain" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MagazineFactoryTest.testMagazineEquality">
+  <component name="RunManager" selected="JUnit.MagazineFactoryTest">
+    <configuration name="BookFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Liber-Lend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="factory" />
+      <option name="MAIN_CLASS_NAME" value="factory.BookFactoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookFactoryTest.testCreateBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Liber-Lend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="factory" />
+      <option name="MAIN_CLASS_NAME" value="factory.BookFactoryTest" />
+      <option name="METHOD_NAME" value="testCreateBook" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookFactoryTest.testDeleteBook" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Liber-Lend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="factory" />
+      <option name="MAIN_CLASS_NAME" value="factory.BookFactoryTest" />
+      <option name="METHOD_NAME" value="testDeleteBook" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookFactoryTest.testGetBookById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Liber-Lend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="factory" />
+      <option name="MAIN_CLASS_NAME" value="factory.BookFactoryTest" />
+      <option name="METHOD_NAME" value="testGetBookById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MagazineFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Liber-Lend" />
       <extension name="coverage">
@@ -89,45 +162,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MagazineFactoryTest.testGetMagazineFields" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Liber-Lend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="factory" />
-      <option name="MAIN_CLASS_NAME" value="factory.MagazineFactoryTest" />
-      <option name="METHOD_NAME" value="testGetMagazineFields" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MagazineFactoryTest.testMagazineEquality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Liber-Lend" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="factory.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="factory" />
-      <option name="MAIN_CLASS_NAME" value="factory.MagazineFactoryTest" />
-      <option name="METHOD_NAME" value="testMagazineEquality" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MagazineFactoryTest.testMagazineEquality" />
-        <item itemvalue="JUnit.MagazineFactoryTest.testGetMagazineFields" />
         <item itemvalue="JUnit.MagazineFactoryTest" />
-        <item itemvalue="JUnit.MagazineFactoryTest.testMagazineEquality" />
-        <item itemvalue="JUnit.MagazineFactoryTest" />
+        <item itemvalue="JUnit.BookFactoryTest.testDeleteBook" />
+        <item itemvalue="JUnit.BookFactoryTest.testCreateBook" />
+        <item itemvalue="JUnit.BookFactoryTest.testGetBookById" />
+        <item itemvalue="JUnit.BookFactoryTest" />
       </list>
     </recent_temporary>
   </component>

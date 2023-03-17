@@ -9,6 +9,7 @@ package domain;
 
 
 import java.util.Date;
+import java.util.Objects;
 
 public class Magazine {
     private final String title;
@@ -133,5 +134,21 @@ public class Magazine {
 
     public String getImageUrl() {
         return imageUrl;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == this) return true;
+        if (!(o instanceof Magazine)) return false;
+        Magazine other = (Magazine) o;
+        return Objects.equals(title, other.title) &&
+                Objects.equals(barcode, other.barcode) &&
+                Objects.equals(edition, other.edition) &&
+                Objects.equals(imageUrl, other.imageUrl);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(title, barcode, edition, imageUrl);
     }
 }

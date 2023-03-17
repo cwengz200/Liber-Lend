@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db14a627-3a96-437e-9cb3-9657ff8515ce" name="Changes" comment="Commit base">
+      <change afterPath="$PROJECT_DIR$/src/test/java/domain/BookTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/domain/MagazineTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/factory/BookFactoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/factory/MagazineFactoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/domain/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Book.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/domain/Magazine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/domain/Magazine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/factory/MagazineFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/factory/MagazineFactory.java" afterDir="false" />
     </list>
@@ -19,10 +25,16 @@
       <list>
         <option value="Class" />
         <option value="Interface" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -47,6 +59,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -61,6 +75,69 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="models" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="factory" />
+      <recent name="domain" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MagazineFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Liber-Lend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="factory" />
+      <option name="MAIN_CLASS_NAME" value="factory.MagazineFactoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MagazineFactoryTest.testGetMagazineFields" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Liber-Lend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="factory" />
+      <option name="MAIN_CLASS_NAME" value="factory.MagazineFactoryTest" />
+      <option name="METHOD_NAME" value="testGetMagazineFields" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MagazineFactoryTest.testMagazineEquality" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Liber-Lend" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="factory" />
+      <option name="MAIN_CLASS_NAME" value="factory.MagazineFactoryTest" />
+      <option name="METHOD_NAME" value="testMagazineEquality" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MagazineFactoryTest.testMagazineEquality" />
+        <item itemvalue="JUnit.MagazineFactoryTest" />
+        <item itemvalue="JUnit.MagazineFactoryTest.testGetMagazineFields" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -70,7 +147,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1679044627637</updated>
-      <workItem from="1679044627639" duration="9600000" />
+      <workItem from="1679044627639" duration="15188000" />
     </task>
     <task id="LOCAL-00001" summary="Commit base">
       <created>1679055811656</created>
@@ -79,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679055811656</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Commit base">
+      <created>1679056658001</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1679056658001</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

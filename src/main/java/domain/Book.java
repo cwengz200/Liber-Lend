@@ -7,6 +7,10 @@ package domain;
     Date: 17 March 2021
 */
 
+import java.util.Objects;
+
+import java.util.Objects;
+
 public class Book {
     private final String title;
     private final Author author;
@@ -16,6 +20,7 @@ public class Book {
     private final String description;
     private final Genre genre;
     private final Language language;
+    private final int edition;
 
     private Book(Builder builder) {
         this.title = builder.title;
@@ -26,6 +31,7 @@ public class Book {
         this.description = builder.description;
         this.genre = builder.genre;
         this.language = builder.language;
+        this.edition = builder.edition;
     }
 
     // getters
@@ -62,6 +68,10 @@ public class Book {
         return language;
     }
 
+    public int getEdition() {
+        return edition;
+    }
+
     // Builder class
 
     public static class Builder {
@@ -73,6 +83,7 @@ public class Book {
         private String description;
         private Genre genre;
         private Language language;
+        private int edition;
 
         public Builder(String title, Author author, Publisher publisher, String ISBN) {
             this.title = title;
@@ -101,8 +112,29 @@ public class Book {
             return this;
         }
 
+        public Builder edition(int edition) {
+            this.edition = edition;
+            return this;
+        }
+
         public Book build() {
             return new Book(this);
         }
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == this) return true;
+        if (!(o instanceof Book)) return false;
+        Book other = (Book) o;
+        return Objects.equals(title, other.title) &&
+                Objects.equals(ISBN, other.ISBN) &&
+                edition == other.edition &&
+                Objects.equals(imageLink, other.imageLink);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(title, ISBN, edition, imageLink);
     }
 }

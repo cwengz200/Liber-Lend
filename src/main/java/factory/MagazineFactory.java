@@ -8,11 +8,7 @@ import java.util.Optional;
 
 
 
-import domain.Magazine;
 
-import java.util.Collections;
-import java.util.List;
-import java.util.Optional;
 
 public class MagazineFactory implements Factory<Magazine> {
 

@@ -6,11 +6,19 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
+
+
+import domain.Magazine;
+
+import java.util.Collections;
+import java.util.List;
+import java.util.Optional;
+
 public class MagazineFactory implements Factory<Magazine> {
 
     @Override
     public Magazine create() {
-        return new Magazine();
+        return new Magazine.MagazineBuilder().build();
     }
 
     @Override
@@ -18,12 +26,10 @@ public class MagazineFactory implements Factory<Magazine> {
         return null;
     }
 
-
     public Optional<Magazine> findById(long id) {
         // implementation for finding magazine by id
         return Optional.empty();
     }
-
 
     public List<Magazine> findAll() {
         // implementation for finding all magazines
@@ -33,7 +39,6 @@ public class MagazineFactory implements Factory<Magazine> {
     @Override
     public Magazine update(Magazine entity) {
         // implementation for updating a magazine
-
         return null;
     }
 

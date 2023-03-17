@@ -44,6 +44,10 @@ public class Magazine {
         private Date publicationDate;
         private String imageUrl;
 
+        public MagazineBuilder() {
+
+
+        }
         public MagazineBuilder(String title) {
             this.title = title;
         }

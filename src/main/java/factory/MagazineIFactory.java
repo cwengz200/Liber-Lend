@@ -1,6 +1,11 @@
 package factory;
+/**
+ * MagazineFactory.java
+ * Class for the MagazineFactory
+ * Author: Peter Buckingham (220165289)
+ * Date: 19 March 2021
+ */
 
-import domain.Book;
 import domain.Magazine;
 
 import java.util.Collections;
@@ -8,10 +13,7 @@ import java.util.List;
 import java.util.Optional;
 
 
-
-
-
-public class MagazineFactory implements Factory<Magazine> {
+public class MagazineIFactory implements IFactory<Magazine> {
 
     @Override
     public Magazine create() {
@@ -19,7 +21,7 @@ public class MagazineFactory implements Factory<Magazine> {
     }
 
     @Override
-    public Book getById(long id) {
+    public Magazine getById(long id) {
         return null;
     }
 
@@ -54,5 +56,10 @@ public class MagazineFactory implements Factory<Magazine> {
     public long count() {
         // implementation for counting the number of magazines
         return 0;
+    }
+
+    @Override
+    public Class<Magazine> getType() {
+        return null;
     }
 }

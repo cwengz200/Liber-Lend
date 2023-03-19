@@ -1,21 +1,22 @@
 package factory;
-/*
-    BookFactory.java
-    Class for the BookFactory
-    Author: Peter Buckingham (220165289)
-    Date: 17 March 2021
-*/
+/**
+ * BookFactory.java
+ * Class for the BookFactory
+ * Author: Peter Buckingham (220165289)
+ * Date: 17 March 2021
+ */
+
 import domain.Book;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class BookFactory implements Factory<Book> {
+public class BookIFactory implements IFactory<Book> {
     private final List<Book> books;
     private long nextId;
 
-    public BookFactory() {
+    public BookIFactory() {
         books = new ArrayList<>();
         nextId = 1;
     }
@@ -59,6 +60,11 @@ public class BookFactory implements Factory<Book> {
     @Override
     public long count() {
         return books.size();
+    }
+
+    @Override
+    public Class<Book> getType() {
+        return null;
     }
 
 

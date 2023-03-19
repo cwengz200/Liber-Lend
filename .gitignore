@@ -4,3 +4,7 @@ out/
 ### IntelliJ IDEA project files
 .idea/
 /.idea/
+
+### Secrets ###
+### Database credentials ###
+mysql-db.properties

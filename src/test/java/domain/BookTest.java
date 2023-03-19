@@ -1,11 +1,11 @@
 package domain;
 
-/*
-    BookFactory.java
-    Class for the BookTest
-    Author: Peter Buckingham (220165289)
-    Date: 17 March 2021
-*/
+/**
+ * BookTest.java
+ * Class for testing the Book class
+ * Author: Peter Buckingham (220165289)
+ * Date: 19 March 2021
+ */
 
 
 import org.junit.jupiter.api.Assertions;

@@ -1,8 +1,7 @@
 package domain;
-<<<<<<<<< Temporary merge branch 1
+
 //Peter Buckingham (220165289)
 import static org.junit.jupiter.api.Assertions.*;
-=========
 
 /*
     BookFactory.java
@@ -14,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
->>>>>>>>> Temporary merge branch 2
+
 
 class BookTest {
 

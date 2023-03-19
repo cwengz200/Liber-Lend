@@ -8,4 +8,5 @@ out/
 
 ### Secrets ###
 ### Database credentials ###
+.mysql-db.properties
 mysql-db.properties

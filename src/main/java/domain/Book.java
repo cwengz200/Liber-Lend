@@ -1,11 +1,11 @@
 package domain;
 
-/*
-    Book.java
-    CLass for the Book POJO
-    Author: Peter Buckingham (220165289)
-    Date: 17 March 2021
-*/
+/**
+ * Book.java
+ * Class for the Book
+ * Author: Peter Buckingham (220165289)
+ * Date: 17 March 2021
+ */
 
 import java.util.Objects;
 

@@ -1,12 +1,13 @@
 package domain;
 
 import static org.junit.jupiter.api.Assertions.*;
-/*
-    MagazineTest.java
-    Class for the MagazineTest
-    Author: Peter Buckingham (220165289)
-    Date: 17 March 2021
-*/
+/**
+ *  MagazineTest.java
+ *  Class for testing the Magazine class
+ *  Author: Peter Buckingham (220165289)
+ *  Date: 19 March 2021
+ *
+ */
 import org.junit.jupiter.api.Test;
 
 import java.util.Date;

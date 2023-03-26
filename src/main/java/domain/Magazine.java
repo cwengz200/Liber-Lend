@@ -1,12 +1,10 @@
 package domain;
-/*
-    Magazine.java
-    Class for the Magazine builder POJO
-    Author: Peter Buckingham (220165289)
-    Date: 17 March 2021
-*/
-
-
+/**
+ * Magazine.java
+ * Class for the Magazine
+ * Author: Peter Buckingham (220165289)
+ * Date: 17 March 2021
+ */
 
 import java.util.Date;
 import java.util.Objects;
@@ -49,6 +47,7 @@ public class Magazine {
 
 
         }
+
         public MagazineBuilder(String title) {
             this.title = title;
         }

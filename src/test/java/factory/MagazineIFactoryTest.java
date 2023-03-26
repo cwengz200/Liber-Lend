@@ -1,4 +1,10 @@
 package factory;
+/**
+ * MagazineFactoryTest.java
+ * Class for testing the MagazineFactory class
+ * Author: Peter Buckingham (220165289)
+ * Date: 19 March 2021
+ */
 
 import domain.Author;
 import domain.Magazine;
@@ -9,7 +15,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class MagazineFactoryTest {
+class MagazineIFactoryTest {
     @Test
     public void testCreateMagazine() {
         Magazine magazine = new Magazine.MagazineBuilder("Title")
@@ -54,7 +60,7 @@ class MagazineFactoryTest {
         //    assertEquals(Language.ENGLISH, magazine.getLanguage());
         //     assertEquals(Genre.FASHION, magazine.getGenre());
         assertEquals(1, magazine.getEdition());
-     //   assertNotNull(magazine.getPublicationDate());
+        //   assertNotNull(magazine.getPublicationDate());
         assertEquals("https://example.com/magazine.jpg", magazine.getImageUrl());
     }
 

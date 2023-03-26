@@ -1,7 +1,18 @@
 package factory;
 
-import static org.junit.jupiter.api.Assertions.*;
+import domain.Book;
 
-class BookFactoryTest {
+/**
+ * BookFactoryTest.java
+ * Class for testing the BookFactory
+ * Author: Peter Buckingham (220165289)
+ * Date: 19 March 2021
+ */
+
+public class BookFactoryTest {
 
 }
+
+
+
+

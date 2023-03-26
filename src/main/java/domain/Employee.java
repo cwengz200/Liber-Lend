@@ -91,7 +91,7 @@ public class Employee {
             return this;
         }
 
-    }
+
 
     @Override
     public String toString() {
@@ -101,7 +101,7 @@ public class Employee {
                 ", LastName='" + LastName + '\'' +
                 ", Email='" + Email + '\'' +
                 ", PhoneNumber=" + PhoneNumber +
-                ", Salary=" + Salary +
+                ", Salary=" + salary +
                 '}';
     }
 
@@ -110,12 +110,15 @@ public class Employee {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Employee employee = (Employee) o;
-        return Employee_Id == employee.Employee_Id && PhoneNumber == employee.PhoneNumber && Salary == employee.Salary && Objects.equals(FirstName, employee.FirstName) && Objects.equals(LastName, employee.LastName) && Objects.equals(Email, employee.Email);
+        return Employee_Id == employee.Employee_Id && PhoneNumber == employee.PhoneNumber && salary == employee.Salary && Objects.equals(FirstName, employee.FirstName) && Objects.equals(LastName, employee.LastName) && Objects.equals(Email, employee.Email);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(Employee_Id, FirstName, LastName, Email, PhoneNumber, Salary);
+        return Objects.hash(Employee_Id, FirstName, LastName, Email, PhoneNumber, salary);
     }
-}
+
+        public Employee Build() {
+        return null;}
+    }}
 

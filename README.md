@@ -2,5 +2,6 @@
 Library management system
 
 Contributors:
- Peter Buckingham - Team Lead
+
+Peter Buckingham - Team Lead
  

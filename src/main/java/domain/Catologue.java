@@ -120,5 +120,10 @@ public class Catologue {
         public int hashCode() {
             return Objects.hash(Title, Author, publisher, ISBN, reviews, description);
         }
-    }
-}
+
+        public Catologue Build() {
+        return null;
+
+
+
+}}}
